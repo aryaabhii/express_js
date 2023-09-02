@@ -9,3 +9,9 @@
 # STEPS TO INSTALL EXPRESS
 # 1.) First create package.json using: npm init y
 # 2.) run this command to install: npm install express 
+
+
+# In express example folder 1 :
+#   1. Example of routing 
+#   2. buildin MIDDLEWARE : express.static
+#        Static website: 
