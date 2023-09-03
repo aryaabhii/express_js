@@ -15,3 +15,10 @@
 #   1. Example of routing 
 #   2. buildin MIDDLEWARE : express.static
 #        Static website: 
+
+# Template engines: It help to make our website dynamic.
+# Template engines
+# 1. Pug
+# 2. Ejs
+# 3. Handlebar : syntax for install => npm install hbs
+#  I had used handlebar on this projects
