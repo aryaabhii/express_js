@@ -1,22 +1,23 @@
 const express = require("express");
-const path    = require("path");
-const app     = express();
-const port_no = 3000;
+const app = express();
+const hbs = require("hbs");
+const path = require("path");
+const port = 8000;
 
-const staticPath = path.join(__dirname, "../public");
-console.log(staticPath);
-// to set view engine...
+// path of the theme
+const templatePath = path.join(__dirname, "../templates");
+const partialPath = path.join(__dirname, "../templates/partials");
+
+// set the view engine
 app.set("view engine", "hbs");
+app.set("views", templatePath);
+hbs.registerPartials(partialPath);
 
-// template engine route
-app.get("", (req, res) => {
+app.get("/", (req, res) => {
     res.render("index");
-});
+})
 
-// app.get("/", (req, res) => {
-//     res.send('Hello');
-// })
 
-app.listen(port_no, () => {
-    console.log(`Server started at ${port_no}`);
-});
+app.listen(port, () => {
+    console.log(`Server started at ${port}`);
+})

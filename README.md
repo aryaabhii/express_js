@@ -21,4 +21,7 @@
 # 1. Pug
 # 2. Ejs
 # 3. Handlebar : syntax for install => npm install hbs
-#  I had used handlebar on this projects
+#  I had used handlebar on this projects. craete a folder in src name views that contain complete file but we can change the name view.
+
+
+# Partials :  This folder is exaclty used for that the portion which are repeating in the webapge are created here.
