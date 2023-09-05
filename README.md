@@ -29,6 +29,7 @@
 # Adding of 404 error page?
 # Sring query : // String query : by the help of this we can get the data from 
 #    Ex: url http://127.0.0.1:8000/about?name=Abhijeet address=Delhi
+# we can get the url dsata using = req.query
 
 # Including public path
 
