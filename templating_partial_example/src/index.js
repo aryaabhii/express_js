@@ -23,11 +23,33 @@ app.get("/", (req, res) => {
     });
 })
 
+/*
+    String query : by the help of this we can get the data from url
+    URL:  http://127.0.0.1:8000/about?name=Abhijeet&address=Delhi
+    DATA: { name: 'Abhijeet', address: 'Delhi' }
+*/
 app.get("/about", (req, res) => {
+    // console.log(req.query);
     res.render("about", {
         pageName : "Shop About - Start Bootstrap Template",
+        name : req.query.name,
+        address : req.query.address,
     });
 })
+
+app.get("/about/*", (req, res) => {
+    res.render("404", {
+        errorComment : "OOPS! About Page Not found",
+        code         : "404"
+    });
+});
+
+app.get("*", (req, res) => {
+    res.render("404", {
+        errorComment : "OOPS! Not found",
+        code         : "404"
+    });
+});
 
 
 app.listen(port, () => {

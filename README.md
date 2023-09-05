@@ -24,4 +24,11 @@
 #  I had used handlebar on this projects. craete a folder in src name views that contain complete file but we can change the name view.
 
 
-# Partials :  This folder is exaclty used for that the portion which are repeating in the webapge are created here.
+# Partials :  This folder is exaclty used for that the portion which are repeating in the webapge are created here. Basically this is based on templating in which we can break repeating part in components.
+
+# Adding of 404 error page?
+# Sring query : // String query : by the help of this we can get the data from 
+#    Ex: url http://127.0.0.1:8000/about?name=Abhijeet address=Delhi
+
+# Including public path
+
